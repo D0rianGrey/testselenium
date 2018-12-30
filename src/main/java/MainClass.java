@@ -8,6 +8,12 @@ public class MainClass {
 
         // FireFox
 
+        //Cube
+
+        System.setProperty("webdriver.gecko.driver", "C:\\Users\\utyfd\\IdeaProjects\\testselenium\\drivers\\geckodriver.exe");
+
+        //Home
+
         System.setProperty("webdriver.gecko.driver", "C:\\Users\\User\\Desktop\\testselenium\\drivers\\geckodriver.exe");
 
         WebDriver driver = new FirefoxDriver();
@@ -15,6 +21,12 @@ public class MainClass {
         driver.get("https://www.seleniumhq.org/");
 
         // Chrome
+
+        //Cube
+
+        System.setProperty("webdriver.gecko.driver", "C:\\Users\\utyfd\\IdeaProjects\\testselenium\\drivers\\chromedriver.exe");
+
+        //Home
 
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\Desktop\\testselenium\\drivers\\chromedriver.exe");
 
