@@ -1,6 +1,6 @@
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class MainClass_Home {
 
@@ -11,11 +11,11 @@ public class MainClass_Home {
         // FireFox
 
 
-        System.setProperty("webdriver.gecko.driver", "C:\\Users\\User\\Desktop\\testselenium\\drivers\\geckodriver.exe");
+        /*System.setProperty("webdriver.gecko.driver", "C:\\Users\\User\\Desktop\\testselenium\\drivers\\geckodriver.exe");
 
         WebDriver driver = new FirefoxDriver();
 
-        driver.get("https://www.seleniumhq.org/");
+        driver.get("https://www.seleniumhq.org/");*/
 
 
         // Chrome
@@ -23,9 +23,24 @@ public class MainClass_Home {
 
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\Desktop\\testselenium\\drivers\\chromedriver.exe");
 
-        WebDriver driver2 = new ChromeDriver();
+        WebDriver driver = new ChromeDriver();
 
-        driver2.get("https://www.google.com.ua/");
+        driver.manage().window().setSize((new Dimension(900,500)));
+        // driver.manage().window().maximize();
+
+
+
+        driver.get("https://www.google.com.ua/");
+        driver.navigate().to("http://asiaworld.cn.ua");
+
+        driver.navigate().back();
+        driver.navigate().forward();
+        driver.navigate().refresh();
+
+        System.out.println(driver.getTitle());
+        System.out.println(driver.getCurrentUrl());
+
+        driver.quit();
 
 
 

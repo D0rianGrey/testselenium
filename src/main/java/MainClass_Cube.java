@@ -18,7 +18,7 @@ public class MainClass_Cube {
         // Chrome
 
 
-        System.setProperty("webdriver.gecko.driver", "C:\\Users\\utyfd\\IdeaProjects\\testselenium\\drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\utyfd\\IdeaProjects\\testselenium\\drivers\\chromedriver.exe");
 
         WebDriver driver2 = new ChromeDriver();
 
