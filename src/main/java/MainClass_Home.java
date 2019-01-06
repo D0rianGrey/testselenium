@@ -11,7 +11,7 @@ public class MainClass_Home {
         // FireFox
 
 
-        /*System.setProperty("webdriver.gecko.driver", "C:\\Users\\User\\Desktop\\testselenium\\drivers\\geckodriver.exe");
+        /*System.setProperty("webdriver.gecko.driver", "C:\\testselenium\\drivers\\geckodriver.exe");
 
         WebDriver driver = new FirefoxDriver();
 
@@ -21,7 +21,7 @@ public class MainClass_Home {
         // Chrome
 
 
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\Desktop\\testselenium\\drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\testselenium\\drivers\\chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
 
